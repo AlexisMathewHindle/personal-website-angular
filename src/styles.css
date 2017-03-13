@@ -1,1 +1,236 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Roboto:400,700);
+body,
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #323232;
+    color: #fff;
+    font-family: 'Robot', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.header_main #menu-icon {
+    top: 6%;
+    right: 6%;
+    z-index: 10001;
+}
+
+.header_main .menu-icon-container {
+    display: block;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 999999;
+}
+
+.header_main .menu-icon {
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    -o-transition: all 0.15s linear;
+    -ms-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+
+.header_main .hamburger-menu {
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    height: 40px;
+    padding-top: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.header_main .hamburger-menu:hover {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 500px) {
+    .header_main .hamburger-menu {
+        display: none;
+    }
+}
+
+.header_main .hamburger-menu .menu-item {
+    background: #afafaf;
+    display: block;
+    height: 1px;
+    margin: -11px 0 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 20px;
+}
+
+.header_main .hamburger-menu .menu-item:first-child {
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.header_main .hamburger-menu .menu-item:nth-child(2) {
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.header_main .hamburger-menu .open .menu-item:first-child {
+    -moz-transform: rotate(-230deg);
+    -o-transform: rotate(-230deg);
+    -ms-transform: rotate(-230deg);
+    -webkit-transform: rotate(-230deg);
+    transform: rotate(-230deg);
+}
+
+.header_main .hamburger-menu .open .menu-item:nth-child(2) {
+    -moz-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+
+.header_main .home_link {
+    display: inline-block;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 60px;
+    line-height: 60px;
+    background-color: #c0a062;
+    color: #161616;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 60px;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all .5s .5s ease-out;
+    transition: all .5s .5s ease-out;
+    cursor: pointer;
+    float: left;
+}
+
+@media only screen and (max-width: 500px) {
+    .header_main .home_link {
+        margin-left: 50px;
+    }
+}
+
+.header_main .home_link--click {
+    opacity: 0.25;
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75);
+    -webkit-transition: all .5s .5s ease-out;
+    transition: all .5s .5s ease-out;
+}
+
+.header_main nav {
+    /*position: fixed;
+    right: 5%;
+    top: 8%;*/
+    width: 75%;
+    float: left;
+    z-index: 100;
+    -webkit-transition: all .5s .5s ease-in-out;
+    transition: all .5s .5s ease-out;
+}
+
+@media only screen and (max-width: 767px) {
+    .header_main nav {
+        display: none;
+    }
+}
+
+.header_main nav ul {
+    list-style: none;
+    margin-top: 6em;
+    float: right;
+}
+
+.header_main nav ul li {
+    display: inline;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.header_main nav li {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 5px;
+    text-decoration: none;
+    max-width: 60%;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.wiggle:hover {
+    border-bottom-color: transparent;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cstyle%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-50%);}}%3C/style%3E%3Cpath fill='none' stroke='#f00' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 1.2em;
+    background-size: auto 5px;
+    background-repeat: repeat-x;
+    padding-bottom: 13px;
+    text-decoration: none;
+}
+
+.active-link {
+    color: #c0a062 !important;
+    border-bottom-color: transparent;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='Squiggle-svg' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 4'%3E%3Cstyle%3E.st0{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-50%);}}%3C/style%3E%3Cpath fill='none' stroke='#c0a062' stroke-width='1' class='st0' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+    background-position: 0 1.2em;
+    background-size: auto 5px;
+    background-repeat: repeat-x;
+    padding-bottom: 13px;
+    text-decoration: none;
+}
+
+.header_main .nav_hide {
+    display: none;
+    -webkit-transition: all .5s .5s ease-in-out;
+    transition: all .5s .5s ease-out;
+}
+
+.contact_main {
+    background-color: red;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    top: 60%;
+    left: 52%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    transition: visibility 1s, z-index 1s, box-shadow .3s;
+    z-index: -1;
+}

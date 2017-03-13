@@ -1,0 +1,35 @@
+.border-container {
+    width: 80%;
+    height: 64%;
+    background-color: white;
+    display: block;
+    margin: 4% auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.55);
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 500px) {
+    .border-container {
+        margin: 10% auto;
+        overflow: scroll;
+        position: relative;
+    }
+}
+
+.border {
+    width: 78%;
+    height: 60%;
+    outline: 1px solid #fff;
+    outline-offset: 15px;
+    display: block;
+    margin: 4% auto;
+    position: absolute;
+    left: 10%;
+}
+
+@media only screen and (max-width: 500px) {
+    .border {
+        margin: 10% auto;
+    }
+}

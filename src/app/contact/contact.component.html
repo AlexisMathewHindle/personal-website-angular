@@ -1,0 +1,53 @@
+<div class="container">
+    <h1>{{ title }}</h1>
+</div>
+
+<pa-border>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="github-container">
+                <h2>Other projects...</h2>
+                <div *ngIf="user">
+                    <a class="btn btn-default btn-block" target="_blank" href="{{user.html_url}}">View Profile</a>
+                </div>
+                <div *ngFor="let repo of repos">
+                    <h4>
+                        <a href="{{repo.html_url}}" target="_blank ">{{repo.name}}</a>
+                    </h4>
+                    <p>{{repo.description}}</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <p class="contact-subtitle">New Projects, freelance enquiry or even a coffee</p>
+            <form id="contact-form" class="the-form" method="post" action="">
+
+                <div class="input required">
+                    <input type="text" id="name" name="name">
+                    <label class="label">Name</label>
+                </div>
+
+                <div class="input required email">
+                    <input type="text" id="email" name="email">
+                    <label class="label">Email</label>
+                </div>
+
+                <div class="input required">
+                    <textarea id="message" name="message"></textarea>
+                    <label class="label">Message</label>
+                </div>
+
+                <div class="inner-container">
+                    <button type="submit" disabled="" class="the-button submit-button">
+                        <span class="button-text">Send Message</span>
+                            <div class="button-mask"></div>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</pa-border>

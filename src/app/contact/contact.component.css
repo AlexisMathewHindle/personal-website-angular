@@ -1,0 +1,126 @@
+h1 {
+    font-family: 'Droid Serif', serif;
+    position: absolute;
+    top: 18vh;
+    left: 11vw;
+}
+
+h2 {
+    font-family: 'Droid Serif', serif;
+    font-size: 55px;
+    color: #c0a062;
+    max-width: 100%;
+    margin-left: 15px;
+}
+
+.github-container img {
+    max-width: 30%;
+    ;
+}
+
+.github-container a {
+    max-width: 30%;
+}
+
+.the-form {
+    width: 100%;
+    position: relative;
+    padding: 20px 0 0;
+}
+
+.the-form .input {
+    margin-bottom: 33px;
+    width: 100%;
+    position: relative
+}
+
+.the-form .input:before {
+    background: #26408b;
+    transition-delay: .1s;
+    z-index: 10;
+}
+
+.the-form .input:after,
+.the-form .input:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: width .45s cubic-bezier(.694, .048, .335, 1);
+}
+
+.the-form .input input {
+    display: block;
+    width: 90%;
+    border: 0;
+    border-bottom: 2px solid silver;
+    padding: 8px 5px;
+    font-size: .875em;
+    border-radius: 0;
+    background: transparent;
+    color: silver;
+    transition: border-color .25s;
+}
+
+.the-form .input .label {
+    position: absolute;
+    top: -13px;
+    left: 0;
+    font-size: .6875em;
+    font-family: League Spartan, Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.the-form .input.required .label:after {
+    content: " *";
+    position: relative;
+    top: -3px;
+}
+
+.the-form .input:after {
+    background: #f06449;
+    z-index: 9;
+}
+
+.the-form .input textarea {
+    width: 90%;
+    border: 0;
+    border-bottom: 2px solid silver;
+    padding: 8px 5px;
+    font-size: .875em;
+    background: transparent;
+    color: silver;
+    transition: border-color .25s;
+}
+
+textarea {
+    height: auto;
+    min-height: 100px;
+    margin: 0;
+}
+
+.inner-container {
+    position: relative;
+    width: 100%;
+}
+
+.the-button {
+    font-family: League Spartan, Helvetica, Arial, sans-serif;
+    font-size: .875em;
+    letter-spacing: 3px;
+    padding: 12px 20px;
+    background-color: #f06449;
+    background: linear-gradient(270deg, #f06449, #ef3636);
+    color: #fff;
+    position: relative;
+    transition: all .3s;
+    border: none;
+}
+
+.the-button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
